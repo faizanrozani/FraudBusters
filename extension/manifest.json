@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "FraudBusters",
+    "version": "1.0.0",
+    "description": "report fradulent products on e-commerce websites",
+    "action": {
+      "default_icon": "assets/FraudBusters.png",
+      "default_popup": "popup.html"
+    },
+    "icons": {
+      "128": "assets/FraudBusters.png"
+    },
+  
+    "permissions": ["activeTab", "http://127.0.0.1:8000/*"]
+  }
