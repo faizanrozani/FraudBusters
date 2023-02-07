@@ -11,5 +11,5 @@
       "128": "assets/FraudBusters.png"
     },
   
-    "permissions": ["activeTab", "http://127.0.0.1:8000/*"]
+    "permissions": ["activeTab", "http://127.0.0.1:8000/*", "http://3.141.35.128/"]
   }
