@@ -22,7 +22,7 @@ button.addEventListener("click", async() =>{
 let btn = document.getElementById("makeReport");
 btn.addEventListener("click", async () =>{
 	const getReport = document.getElementById('confirmReport');
-	const url = 'http://3.141.35.128/';
+	const url = 'http://3.141.35.128';
 
 	try {
 		const res = await fetch(url);
