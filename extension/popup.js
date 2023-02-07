@@ -2,10 +2,11 @@ var button = document.getElementById("submitButton");
 
 button.addEventListener("click", async() =>{
 	var obj1 = document.getElementsByName("fname")[0].value;
+	var obj2 = document.getElementsByName("urlName")[0].value;
 
     const req = new XMLHttpRequest();
 	const baseUrl = "http://3.141.35.128/add/";
-    const urlParams = `name=${obj1}`;
+    const urlParams = `name=${obj1} & url=${obj2}`;
     req.open("POST", baseUrl, true);
     req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     req.send(urlParams);
