@@ -4,7 +4,7 @@ button.addEventListener("click", async() =>{
 	var obj1 = document.getElementsByName("fname")[0].value;
 
     const req = new XMLHttpRequest();
-    const baseUrl = "http://3.141.35.128/add/";
+    const baseUrl = "3.141.35.128/add/";
     const urlParams = `name=${obj1}`;
 
     req.open("POST", baseUrl, true);
@@ -22,7 +22,7 @@ button.addEventListener("click", async() =>{
 let btn = document.getElementById("makeReport");
 btn.addEventListener("click", async () =>{
 	const getReport = document.getElementById('confirmReport');
-	const url = 'http://3.141.35.128';
+	const url = 'http://3.141.35.128/';
 
 	try {
 		const res = await fetch(url);
