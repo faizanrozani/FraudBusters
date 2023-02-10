@@ -22,11 +22,19 @@
 
 <div>
   <body>
-    <label for="name" style="font-size: medium;">First Name:</label>
+    <label for="name" style="font-size: medium;">Name:</label>
     <input style="width: 120px" type="text" id="name" name="fname" placeholder="Enter your name"><br>
-    <label for="URL" style="font-size: medium;">URL:</label>
+    <label for="url" style="font-size: medium;">URL:</label>
     <input style="width: 120px;" type="text" id="url" name="urlName" placeholder="Enter the url"><br>
-    <button type="submit" style= "display: block; margin: auto;" id="submitButton">Send to DB</button>
+    <button onclick="GetURL()" type="submit" style= "display: block; margin: auto;" id="submitButton">Send to DB</button>
+    <p id="url"></p>
+
+    <script>
+      function GetURL() {
+          var gfg = document.URL;
+          document.getElementById("url").innerHTML = gfg;
+      }
+    </script>
   </body>
 </div>
 <div>
