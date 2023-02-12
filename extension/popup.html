@@ -22,7 +22,7 @@
 
 <div>
   <body>
-    <label for="name" style="font-size: medium;">First Name:</label>
+    <label for="name" style="font-size: medium;">Name:</label>
     <input style="width: 120px" type="text" id="name" name="fname" placeholder="Enter your name"><br>
     <label for="URL" style="font-size: medium;">URL:</label>
     <input style="width: 120px;" type="text" id="url" name="urlName" placeholder="Enter the url"><br>
@@ -32,9 +32,11 @@
 <div>
   <body>
     <button class="button-48" role="button" id="makeReport"><span class="text">Get from DB!</span></button>
-    <div id="confirmReport"></div>
-    <script src="popup.js"></script>
+    
   </body>
 </div>
-
+<div class="counter">
+  <p>Total reports: </p> <p id="confirmReport"></p> <p>on this product</p>
+  <script src="popup.js"></script>
+</div>
 </html>
