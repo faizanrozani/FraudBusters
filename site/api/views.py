@@ -1,11 +1,11 @@
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
-from base.models import urlStorage
+from base.models import urlstorage
 from .serializers import ItemSerializer
 
 @api_view(['GET'])
 def getData(request):
-    items = urlStorage.objects.all()
+    items = urlstorage.objects.all()
     serializer = ItemSerializer(items, many=True)
     return Response(serializer.data)
 

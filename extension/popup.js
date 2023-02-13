@@ -1,6 +1,5 @@
 var button = document.getElementById("submitButton");
 
-
 let page = ["hello"];
 
 
@@ -59,3 +58,30 @@ addEventListener('DOMContentLoaded', async() => {
 	}
 });
 
+
+
+addEventListener('DOMContentLoaded', async() => {
+	const getReport = document.getElementById('confirmReport2');
+	const url = 'http://127.0.0.1:8000/';
+
+	try {
+		const res = await fetch(url);
+		const data = await res.json();
+		console.log(data);
+		/*
+		const dataHTML = data.map(data => {
+			return "<pre>" + `${data.url}` +"</pre>";
+		}).join('');
+		*/
+
+		var counter = 0;
+		for (let i = 0; i < data.length; i++) {
+			counter++;
+		}
+		const dataHTML = counter;
+		getReport.innerHTML = dataHTML;
+	}
+	catch(err){
+		console.error(err);
+	}
+});
