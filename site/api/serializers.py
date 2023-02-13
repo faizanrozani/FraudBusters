@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from base.models import urlStorage
+from base.models import urlstorage
 
 class ItemSerializer(serializers.ModelSerializer):
     class Meta:
-        model = urlStorage
+        model = urlstorage
         fields = '__all__'
