@@ -15,7 +15,7 @@ button.addEventListener("click", async() =>{
 	var obj1 = document.getElementsByName("fname")[0].value;
 
     const req = new XMLHttpRequest();
-	const baseUrl = "http://127.0.0.1:8000/add/";
+	const baseUrl = "http://3.141.35.128/add/";
     const urlParams = `name=${obj1}&url=${page[0]}`;
     req.open("POST", baseUrl, true);
     req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
@@ -32,7 +32,7 @@ button.addEventListener("click", async() =>{
 //btn.addEventListener("click", async () =>{
 addEventListener('DOMContentLoaded', async() => {
 	const getReport = document.getElementById('confirmReport');
-	const url = 'http://127.0.0.1:8000/';
+	const url = 'http://3.141.35.128/';
 
 	try {
 		const res = await fetch(url);
@@ -62,7 +62,7 @@ addEventListener('DOMContentLoaded', async() => {
 
 addEventListener('DOMContentLoaded', async() => {
 	const getReport = document.getElementById('confirmReport2');
-	const url = 'http://127.0.0.1:8000/';
+	const url = 'http://3.141.35.128/';
 
 	try {
 		const res = await fetch(url);
