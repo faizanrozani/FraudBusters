@@ -1,28 +1,98 @@
-html,
-body {
+html{
   width: 320px;
-  background-color: rgb(255, 249, 249);
-  height: 357px;
+  background-color: #f4f4f4;
+  height: 430px;
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.whole{
+  background:rgb(255, 255, 255);
+  position: relative;
+  bottom:17px;
+  left:16px;
+  width:90%;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 5px;
+  height:300px;
+}
+
+.whole2{
+  position:relative;
+  top:10px;
+}
+
+
+.header{
+  position:relative;
+  bottom: 12px;
+  margin:16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logotext{
+  left: -30px;
+  top: 1px;
+  position: relative;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 22px;
+}
+
+.smallogotext{
+  position: relative;
+  top: 3px;
+  left: -68px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+}
+.logotext2{
+  position: relative;
+  left: -101px;
+  top: 1px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 22px;
+}
+
+.smallogotext2{
+  position:relative;
+  left: -135px;
+  top:3px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+}
+
+.name{
+  position:relative;
+  bottom:50px;
+}
+
+
+form {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  padding-bottom: 20px;
+  padding-top:10px;
+}
+
+
 .counter {
-  position: absolute;
-  width: 60px;
-  height: 70px;
-  color: white;
-  background: #2600ff;
-  left: 19px;
-  top: 65px;
+  position: relative;
+  top:20px;
+  color: black;
+  word-wrap: break-word;
+  font-size:medium;
 }
 
 .Totalcount {
   position: absolute;
   width: 60px;
   height: 70px;
-  color: white;
-  background: #2600ff;
+  color: black;
   right: 19px;
   top: 65px;
 }
@@ -248,154 +318,6 @@ body {
   flex-direction: row;
   align-items: center;
 }
-
-header{
-  height: 50px;
-  width: 100%;
-  border-bottom: solid 2px #d3d3d3 ;
-}
-
-h1{
-  margin-top: 8px;
-  padding-left: 15px;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 35px;
-}
-
-
-.name{
-  height: 50px;
-}
-
-
-form {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-  padding-bottom: 20px;
-  padding-top:10px;
-}
-
-/* --------------------------------*/
-
-/* Button container */
-.progress-button {
-	position: relative;
-	display: inline-block;
-	text-align: center;
-	width: 45%;
-	min-width: 250px;
-	margin: 10px;
-}
-
-/* Button style */
-.progress-button button {
-	display: block;
-	margin: 0 auto;
-	padding: 0;
-	width: 250px;
-	height: 70px;
-	border: 2px solid #0011ff;
-	border-radius: 40px;
-	background: transparent;
-	color: #0011ff;
-	letter-spacing: 1px;
-	font-size: 18px;
-	font-family: 'Montserrat', sans-serif;
-	-webkit-tap-highlight-color: transparent;
-	-webkit-transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s;
-	transition: background-color 0.3s, color 0.3s, width 0.3s, border-width 0.3s, border-color 0.3s;
-}
-
-.progress-button button:hover {
-	background-color: #0011ff;
-	color: #fff;
-}
-
-.progress-button button:focus {
-	outline: none;
-}
-
-/* Text (transition for when returning to initial state) */
-.progress-button button span {
-	-webkit-transition: opacity 0.3s 0.1s;
-	transition: opacity 0.3s 0.1s;
-}
-
-/* Common style of SVGs */
-.progress-button svg {
-	position: absolute;
-	top: 0;
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%);
-	pointer-events: none;
-}
-
-.progress-button svg path {
-	opacity: 0;
-	fill: none;
-}
-
-.progress-button svg.progress-circle path {
-	stroke: #1ECD97;
-	stroke-width: 5;
-}
-
-.progress-button svg.checkmark path,
-.progress-button svg.cross path {
-	stroke: #fff;
-	stroke-linecap: round;
-	stroke-width: 4;
-	-webkit-transition: opacity 0.1s;
-	transition: opacity 0.1s;
-}
-
-/* Loading, success and error effects */
-.loading.progress-button button {
-	width: 70px; /* make a circle */
-	border-width: 5px;
-	border-color: #ddd;
-	background-color: transparent;
-	color: #fff;
-}
-
-.loading.progress-button span {
-	-webkit-transition: opacity 0.15s;
-	transition: opacity 0.15s;
-}
-
-.loading.progress-button span,
-.success.progress-button span,
-.error.progress-button span {
-	opacity: 0; /* keep it hidden in all states */
-}
-
-.success.progress-button button,
-.error.progress-button button {
-	-webkit-transition: background-color 0.3s, width 0.3s, border-width 0.3s;
-	transition: background-color 0.3s, width 0.3s, border-width 0.3s;
-}
-
-.success.progress-button button {
-	border-color: #1ECD97;
-	background-color: #1ECD97;
-}
-
-.error.progress-button button {
-	border-color: #FB797E;
-	background-color: #FB797E;
-}
-
-.loading.progress-button svg.progress-circle path,
-.success.progress-button svg.checkmark path,
-.error.progress-button svg.cross path {
-	opacity: 1;
-	-webkit-transition: stroke-dashoffset 0.3s;
-	transition: stroke-dashoffset 0.3s;
-}
-
 
 
 

@@ -13,43 +13,47 @@
 
 </head>
 
-<header>
-  <div>
-    <img src="assets/FraudBusters.png" style="float: left" height="50px" width="50px">
-    <h1 style="float: left">FraudBusters</h1>
+<div class="header">
+  <img src="assets/FraudBusters.png" style="float: left" height="32px" width="32px">
+  <h1 class="logotext" style="float: left"><strong>F</strong></h1>
+  <h1 class="smallogotext" style="float: left">raud</h1>
+  <h1 class="logotext2" style="float: left"><strong>B</strong></h1>
+  <h1 class="smallogotext2" style="float: left">usters</h1>
+</div>
+
+<div class="whole">
+    <div class="whole2">
+      <label for="name" style="font-size: medium;">Name:</label>
+      <input style="width: 120px" type="text" name="fname" placeholder="Enter your name"><br>
+      <button class="button-48" type="submit" style="display: block; margin: auto;" id="submitButton">Make Report</button>
+    </div>
+
+
+  <div class="counter">
+    <p>Total reports: </p>
+    <p id="confirmReport"></p>
+    <p>on this product</p>
+    <script src="popup.js"></script>
   </div>
-</header>
 
-
-<div>
-  <body>
-    <label for="name" style="font-size: medium;">Name:</label>
-    <input style="width: 120px" type="text" id="name" name="fname" placeholder="Enter your name"><br>
-    <button class="button-48" type="submit" style= "display: block; margin: auto;" id="submitButton">Send to DB</button>
-  </body>
+  <div class="Totalcount">
+    <p>Total reports: </p>
+    <p id="confirmReport2"></p>
+    <p>using this extension</p>
+    <script src="popup.js"></script>
+  </div>
 </div>
-
-<div class="counter">
-  <p>Total reports: </p> <p id="confirmReport"></p> <p>on this product</p>
-  <script src="popup.js"></script>
-</div>
-
-<div class="Totalcount">
-  <p>Total reports: </p> <p id="confirmReport2"></p> <p>using this extension</p>
-  <script src="popup.js"></script>
-</div>
-
-<div class="Loginpage">
-  <a href='Login.html'> 
-    <button id="LoginPage" class="Login">Login</button>
-  </a>
-</div>
+  <div class="Loginpage">
+    <a href='Login.html'>
+      <button id="LoginPage" class="Login">Login</button>
+    </a>
+  </div>
 
 
-<div class="Registerpage">
-  <a href='Register.html'> 
-    <button id="RegisterPage" class="Register">Register</button>
-  </a>
-</div>
+  <div class="Registerpage">
+    <a href='Register.html'>
+      <button id="RegisterPage" class="Register">Register</button>
+    </a>
+  </div>
 
 </html>
