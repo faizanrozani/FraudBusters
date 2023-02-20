@@ -11,3 +11,14 @@ class urlstorage(models.Model):
 
     class Meta: 
         managed = True
+
+class ExtensionUser(models.Model):
+    email = models.CharField(max_length=100)
+    password = models.CharField(max_length=24)
+
+    def __str__(self) -> str:
+        return self.email
+
+    class Meta: 
+        managed = True
+    
