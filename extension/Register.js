@@ -19,13 +19,13 @@ chrome.tabs.query({ active: true, lastFocusedWindow: true }, tabs => {
 			errmsg2.innerHTML = errmsg;
 		}
 		else {
-			if(password.value.length < 8){
+			if (password.value.length < 8) {
 				const errmsg = "Passwords is not of appropriate length";
 				const errmsg2 = document.getElementById('comfirmButton');
 				errmsg2.innerHTML = errmsg;
 			}
-			else{
-			
+			else {
+
 				var obj1 = document.getElementsByName("email")[0].value;
 				var obj2 = document.getElementsByName("password")[0].value;
 
@@ -47,13 +47,12 @@ chrome.tabs.query({ active: true, lastFocusedWindow: true }, tabs => {
 				const errmsg2 = document.getElementById('comfirmButton');
 				errmsg2.innerHTML = errmsg;
 			}
-			
 
-			
+
+
 		}
-		
 
-		
+
 	});
 
 });
