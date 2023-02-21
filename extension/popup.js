@@ -1,5 +1,6 @@
 var button = document.getElementById("submitButton");
 
+
 let page = ["hello"];
 let report = ["hello"];
 

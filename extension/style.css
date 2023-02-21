@@ -23,6 +23,8 @@ html{
   top:10px;
 }
 
+/* below is used for popup.html */
+
 .separator{
   position: relative;
   left: 21px;
@@ -33,6 +35,8 @@ html{
   width: 246px;
 
 }
+
+/* This is used for popup.html */
 
 .separator2{
   position: relative;
@@ -100,7 +104,6 @@ form {
   padding-top:10px;
 }
 
-
 .counter {
   left: 15px;
   position: relative;
@@ -123,6 +126,37 @@ form {
 }
 
 /* CSS */
+
+/* Popup.html link */
+
+.popupLink{
+  font-size: 15px;
+  top: 69px;
+  position: relative;
+  left: -52px;
+}
+a:link {
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:active {
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
 
 /*Home button*/
 
@@ -304,9 +338,10 @@ input[type=text] {
 }
 
 .button-48:before {
+  opacity: 0.5;
   animation: opacityFallbackOut .5s step-end forwards;
   backface-visibility: hidden;
-  background-color: #7cb8fd;
+  background-color: #9cc8fa;
   clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
   content: "";
   height: 100%;
@@ -324,7 +359,7 @@ input[type=text] {
 }
 
 .button-48:after {
-  background-color: #7cb8fd;
+  background-color: #ffffff;
 }
 
 .button-48 span {
