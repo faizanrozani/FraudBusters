@@ -16,11 +16,12 @@ chrome.tabs.query({ active: true, lastFocusedWindow: true }, tabs => {
 		if (websites[i] == report[2] & page.length >= 2) {
 
 			button.addEventListener("click", async () => {
-				var obj1 = document.getElementsByName("fname")[0].value;
-
+				if (localStorage.getItem("email")) {
+					var obj1 = localStorage.getItem("email").split('@');
+				}
 				const req = new XMLHttpRequest();
 				const baseUrl = "http://127.0.0.1:8000/add/";
-				const urlParams = `name=${obj1}&url=${page[0]}`;
+				const urlParams = `name=${obj1[0]}&url=${page[0]}`;
 				req.open("POST", baseUrl, true);
 				req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 				req.send(urlParams);
