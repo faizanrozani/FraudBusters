@@ -1,3 +1,4 @@
 var x = localStorage.getItem("email").split('@');
 var p = document.getElementById("displayName");
-p.innerHTML = x[0];
+var y = "Welcome,";
+p.innerHTML = y + "<br>" + x[0];
