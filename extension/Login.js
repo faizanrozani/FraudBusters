@@ -22,9 +22,10 @@ chrome.tabs.query({ active: true, lastFocusedWindow: true }, tabs => {
                     const goodmsg = "Logged In";
                     const goodmsg2 = document.getElementById('loggedIn');
                     goodmsg2.innerHTML = goodmsg;
-                    check = true;
+                    check = true; 
                     myFunction(obj1);
                 }
+                
             }
             if (check == false) {
                 const goodmsg = "Wrong Email or Password";
@@ -40,7 +41,11 @@ chrome.tabs.query({ active: true, lastFocusedWindow: true }, tabs => {
 
 function myFunction(obj1) {
     if (check == true) {
-        localStorage.setItem("email", obj1);
+        var string = "Welcome, ";
+        const name = obj1.split("@");
+        localStorage.setItem("email", string + name[0]);
     }
+    
 }
+
 

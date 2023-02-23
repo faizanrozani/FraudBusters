@@ -46,25 +46,34 @@
     <script src="popup.js"></script>
   </div>
 
-  <div class="Loginpage">
-    <a href='Login.html'>
-      <button id="LoginPage" class="Login">Login </button>
-    </a>
-  </div>
+  <div id = "hide" >
+    <div class="Loginpage">
+      <a href='Login.html'>
+        <button id="LoginPage" class="Login">Login </button>
+      </a>
+    </div>
 
-  <div class="Registerpage">
-    <a href='Register.html'>
-      <button id="RegisterPage" class="Register">Register</button>
-    </a>
+    <div class="Registerpage">
+      <a href='Register.html'>
+        <button id="RegisterPage" class="Register">Register</button>
+      </a>
+    </div>
   </div>
-
+  
   <div class="popupLink">
     <a href="https://www.bigcommerce.com/blog/ecommerce-fraud/" target="_blank">tips to prevent fraud</a>
-    </body>
   </div>
-<div class="welcomeContainer">
-  <div id="displayName">
-    <script src="access.js"></script>
+
+  <div id = "hidelogout" style="display: none;" >
+    <button id="LogoutButton" class="Logout">Logout</button>
+    <script src="logout.js"></script>
+  </div>
+
+  <div class="welcomeContainer">
+    <div id="displayName">Not Signed in
+      <script type="text/javascript" src="access.js"></script>
+    </div>
   </div>
 </div>
+
 </html>

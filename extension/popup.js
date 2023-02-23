@@ -17,7 +17,9 @@ chrome.tabs.query({ active: true, lastFocusedWindow: true }, tabs => {
 
 			button.addEventListener("click", async () => {
 				if (localStorage.getItem("email")) {
-					var obj1 = localStorage.getItem("email").split('@');
+					var obj = localStorage.getItem("email").split(' ');
+					var obj1 = obj[1].split('@');
+
 				}
 				const req = new XMLHttpRequest();
 				const baseUrl = "http://127.0.0.1:8000/add/";
