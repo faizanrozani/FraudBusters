@@ -114,7 +114,7 @@ form {
   left: 15px;
   position: relative;
   top: 65px;
-  color: black;
+  color: rgb(0, 0, 0);
   word-wrap: break-word;
   font-size: medium;
   font-family: sans-serif;
@@ -125,7 +125,7 @@ form {
   left: 77px;
   position: relative;
   top: 47px;
-  color: black;
+  color: rgb(0, 0, 0);
   word-wrap: break-word;
   font-size: medium;
   font-family: sans-serif;
