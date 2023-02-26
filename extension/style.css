@@ -7,9 +7,9 @@ html{
 }
 
 .welcomeContainer{
-  position:relative;
-  top: -231px;
-  right: -106px;
+  position: absolute;
+  top: -52px;
+  right: 2px;
 }
 
 .whole{
@@ -114,7 +114,7 @@ form {
   left: 15px;
   position: relative;
   top: 65px;
-  color: black;
+  color: rgb(0, 0, 0);
   word-wrap: break-word;
   font-size: medium;
   font-family: sans-serif;
@@ -125,10 +125,37 @@ form {
   left: 77px;
   position: relative;
   top: 47px;
-  color: black;
+  color: rgb(0, 0, 0);
   word-wrap: break-word;
   font-size: medium;
   font-family: sans-serif;
+}
+
+.Logout{
+  bottom: -82px;
+  align-items: center;
+  background-image: linear-gradient(144deg,#2600ff, #402bc4 50%,#00DDEB);
+  border: 0;
+  border-radius: 30px;
+  box-shadow: rgb(151 65 252 / 20%) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 16px;
+  justify-content: center;
+  line-height: 0em;
+  max-width: 100%;
+  min-width: 40px;
+  padding: 19px 24px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  position: relative;
+  right: -93px;
 }
 
 /* CSS */
@@ -137,9 +164,9 @@ form {
 
 .popupLink{
   font-size: 15px;
-  top: 87px;
-  position: relative;
-  left: -52px;
+  top: 255px;
+  position: absolute;
+  left: 16px;
 }
 a:link {
   color: blue;
@@ -256,7 +283,7 @@ a:active {
 .Registerpage{
   position: relative;
   right: -157px;
-  bottom: -51px;
+  bottom: -52px;
 }
 
 .Register {

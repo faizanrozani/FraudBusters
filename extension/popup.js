@@ -17,10 +17,12 @@ chrome.tabs.query({ active: true, lastFocusedWindow: true }, tabs => {
 
 			button.addEventListener("click", async () => {
 				if (localStorage.getItem("email")) {
-					var obj1 = localStorage.getItem("email").split('@');
+					var obj = localStorage.getItem("email").split(' ');
+					var obj1 = obj[1].split('@');
+
 				}
 				const req = new XMLHttpRequest();
-				const baseUrl = "http://127.0.0.1:8000/add/";
+				const baseUrl = "http://3.141.35.128/add/";
 				const urlParams = `name=${obj1[0]}&url=${page[0]}`;
 				req.open("POST", baseUrl, true);
 				req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
@@ -30,11 +32,12 @@ chrome.tabs.query({ active: true, lastFocusedWindow: true }, tabs => {
 						console.log("Got response 200!");
 					}
 				}
+				window.parent.location = window.parent.location.href;
 			});
 
 			addEventListener('DOMContentLoaded', async () => {
 				const getReport = document.getElementById('confirmReport');
-				const url = 'http://127.0.0.1:8000/';
+				const url = 'http://3.141.35.128/';
 
 				try {
 					const res = await fetch(url);
@@ -62,7 +65,7 @@ chrome.tabs.query({ active: true, lastFocusedWindow: true }, tabs => {
 
 			addEventListener('DOMContentLoaded', async () => {
 				const getReport = document.getElementById('confirmReport2');
-				const url = 'http://127.0.0.1:8000/';
+				const url = 'http://3.141.35.128/';
 
 				try {
 					const res = await fetch(url);
