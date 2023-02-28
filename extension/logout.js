@@ -3,6 +3,7 @@ document.getElementById("LogoutButton").addEventListener("click", myFunction);
 function myFunction(){
   if(localStorage.getItem("email") != " "){
     var x = localStorage.setItem("email", "");
+    var x2 = localStorage.setItem("username", "");
     var p = document.getElementById("displayName");
     var y = "Logged Out";
     p.innerHTML = y;
