@@ -24,6 +24,7 @@ chrome.tabs.query({ active: true, lastFocusedWindow: true }, tabs => {
                     goodmsg2.innerHTML = goodmsg;
                     check = true; 
                     myFunction(obj1);
+                    window.location.href = "popup.html";
                 }
                 
             }
@@ -44,6 +45,7 @@ function myFunction(obj1) {
         var string = "Welcome, ";
         const name = obj1.split("@");
         localStorage.setItem("email", string + name[0]);
+        localStorage.setItem("username", name);
     }
     
 }
