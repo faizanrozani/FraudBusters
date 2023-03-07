@@ -24,7 +24,7 @@ chrome.tabs.query({ active: true, lastFocusedWindow: true }, tabs => {
 					window.location.href = "Register.html";
 				}
 				var check = false;
-				const url = 'http://3.141.35.128/';
+				const url = 'http://127.0.0.1:8000/';
 				const res = await fetch(url);
 				const data = await res.json();
 				for (let i = 0; i < data.length; i++) {
@@ -36,9 +36,10 @@ chrome.tabs.query({ active: true, lastFocusedWindow: true }, tabs => {
 			
 
 				if (check == false) {
+				var obj1 = document.getElementsByName("repDetail")[0].value;
 				const req = new XMLHttpRequest();
-				const baseUrl = "http://3.141.35.128/add/";
-				const urlParams = `name=${obj}&url=${page[0]}`;
+				const baseUrl = "http://127.0.0.1:8000/add/";
+				const urlParams = `name=${obj}&url=${page[0]}&reportText=${obj1}`;
 				req.open("POST", baseUrl, true);
 				req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 				req.send(urlParams);
@@ -54,7 +55,7 @@ chrome.tabs.query({ active: true, lastFocusedWindow: true }, tabs => {
 
 addEventListener('DOMContentLoaded', async () => {
 	const getReport = document.getElementById('confirmReport');
-	const url = 'http://3.141.35.128/';
+	const url = 'http://127.0.0.1:8000/';
 
 	try {
 		const res = await fetch(url);
@@ -81,7 +82,7 @@ addEventListener('DOMContentLoaded', async () => {
 
 addEventListener('DOMContentLoaded', async () => {
 	const getReport = document.getElementById('confirmReport2');
-	const url = 'http://3.141.35.128/';
+	const url = 'http://127.0.0.1:8000/';
 
 	try {
 		const res = await fetch(url);

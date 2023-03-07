@@ -25,12 +25,13 @@
   <div class="whole2">
     <div id="separatorA" class="separator"></div>
     <div id="separatorB" class="separator2"></div>
-    <!--<label for="name" style="font-size: medium;">Name:</label>
-    <input style="width: 120px" type="text" name="fname" placeholder="Enter your name"><br>-->
+
     <button class="button-48" type="submit" style="display: block; margin: auto;" id="submitButton">Make Report</button>
   </div>
 
-
+  <div class="reportText">
+  <input style="width: 200px" type="text" name="repDetail" placeholder="Why'd you report? (400 chars)"maxlength="400"><br>
+  </div>
   <div class="counter">
     <p>Total reports: <br>
     <p id="confirmReport" style="color: blue"></p> on this product</p>
@@ -39,8 +40,9 @@
 
 
   <div class="Totalcount">
-    <p id="confirmReport2" style="color: blue"></p> Total Reports</p>
-    <script src="popup.js"></script>
+    <a href='viewReports.html'>
+      <button class="button-48" id="reportsPage" class="reports2">View Reports</button>
+    </a>
   </div>
 
   <div id="hide">
@@ -60,6 +62,8 @@
   <div class="popupLink">
     <a href="https://www.bigcommerce.com/blog/ecommerce-fraud/" target="_blank">Tips to prevent fraud</a>
   </div>
+
+  
 
   <div id="hidelogout" style="display: none;">
     <button id="LogoutButton" class="Logout">Logout</button>
