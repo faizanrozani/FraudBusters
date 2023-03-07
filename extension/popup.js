@@ -48,7 +48,10 @@ chrome.tabs.query({ active: true, lastFocusedWindow: true }, tabs => {
 						console.log("Got response 200!");
 					}
 				}
-				window.parent.location = window.parent.location.href;
+				setTimeout(function(){
+					window.parent.location = window.parent.location.href;
+				}, 150);
+				
 			}
 
 		});
