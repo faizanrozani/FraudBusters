@@ -1,7 +1,7 @@
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from base.models import urlstorage, ExtensionUser
-from .serializers import ItemSerializer, UserSerializer
+from base.models import urlstorage, ExtensionUser, ReviewStorage
+from .serializers import ItemSerializer, UserSerializer, ReviewSerializer
 
 
 class getData(APIView):
@@ -30,5 +30,15 @@ class addUser(APIView):
             serializer.save()
         return Response(serializer.data)
 
+class addReview(APIView):
+    def post(self, request):
+        serializer = ReviewSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+        return Response(serializer.data)
 
-
+class getReview(APIView):
+    def get(self, request):
+        reviews = ReviewStorage.objects.all()
+        serializer = ReviewSerializer(reviews, many=True)
+        return Response(serializer.data)
