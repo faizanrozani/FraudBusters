@@ -1,20 +1,15 @@
 var reviewButton = document.getElementById("reviewSubmit");
 
 reviewButton.addEventListener("click", async () => {
-    var userRating = document.getElementById("reviewBox").value;
-    var ratingReason = document.getElementById("detailedReview").value;
+    var obj1 = document.getElementsByName("textReview")[0].value;
+    var obj2 = document.getElementsByName("reviewDetails")[0].value;
 
+    console.log(obj1);
+    console.log(obj2);
 
-    
-    const url = "http://127.0.0.1:8000/getReview/";
-    
-    const res = await fetch(url);
-    const data = await res.json();
-
-    
     const req = new XMLHttpRequest();
     const baseUrl = "http://127.0.0.1:8000/addReview/";
-    const urlParams = `rating=${userRating}&reason=${ratingReason}`;
+    const urlParams = `rating=${obj1}&rating_reason=${obj2}`;
     req.open("POST", baseUrl, true);
     req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     req.send(urlParams);
@@ -23,5 +18,4 @@ reviewButton.addEventListener("click", async () => {
             console.log("Got response 200!");
         }
 	}
-
 });

@@ -47,10 +47,11 @@
         }
 
         .HomePage {
-            bottom: -79px;
-            left: 41px;
             position: relative;
+             top: 28px;
+             left: 40px;
         }
+        
     </style>
 </head>
 
@@ -60,14 +61,12 @@
     </center>
     <div class="container">
         <div id = "ratingButtons" style = "position: relative; top: -25px;">
-            <h3>How would you rate your experience using FraudBusters?</h3>
-            <input type="text" id="reviewBox" name="textReview" maxlength="14" style="padding: 10px"> 
+            <h3>How would you rate your experience using FraudBusters? (1-10)</h3>
+            <input type="text" name="textReview" maxlength="14" style="padding: 10px"> 
         </div>
         <div id = "ratingTextbox" style = "position: relative; top: -25px">
             <h3>Tell us why you gave FraudBusters the rating you selected</h3>
-            <textarea id="detailedReview" name="reviewDetails" rows="4" cols="30" style="resize: none">
-
-            </textarea>
+            <input type="text" name="reviewDetails" style="resize: none">
         </div>
         <div id="buttonFunctionality">
             <button id = "reviewSubmit"class="button-48" type = "submit">Submit Review</button>
@@ -75,3 +74,11 @@
         </div>
     </div>
 </body>
+
+<div class="HomePage">
+    <a href='popup.html'>
+        <button id="HomePage" class="Home">Home Page</button>
+    </a>
+</div>
+
+</html>
