@@ -4,7 +4,7 @@ chrome.tabs.query({ active: true, lastFocusedWindow: true }, tabs => {
     report = page[0].split("/");
     window.onload = async() => {
 
-        const url = 'http://127.0.0.1:8000/';
+        const url = 'http://3.141.35.128/';
 
         try {
             const res = await fetch(url);

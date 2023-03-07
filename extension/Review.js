@@ -8,7 +8,7 @@ reviewButton.addEventListener("click", async () => {
     console.log(obj2);
 
     const req = new XMLHttpRequest();
-    const baseUrl = "http://127.0.0.1:8000/addReview/";
+    const baseUrl = "http://3.141.35.128/addReview/";
     const urlParams = `rating=${obj1}&rating_reason=${obj2}`;
     req.open("POST", baseUrl, true);
     req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
