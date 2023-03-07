@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from base.models import urlstorage
 from base.models import ExtensionUser
+from base.models import ReviewStorage
 
 class ItemSerializer(serializers.ModelSerializer):
     class Meta:
@@ -12,3 +13,7 @@ class UserSerializer(serializers.ModelSerializer):
         model = ExtensionUser
         fields = '__all__'
 
+class ReviewSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ReviewStorage
+        fields = '__all__'

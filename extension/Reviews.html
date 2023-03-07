@@ -61,25 +61,17 @@
     <div class="container">
         <div id = "ratingButtons" style = "position: relative; top: -25px;">
             <h3>How would you rate your experience using FraudBusters?</h3>
-            <input type = "radio" id = "poor" name = "rating" value = "Poor">
-            <label for = "poor">Poor</label>
-            <input type = "radio" id = "fair" name = "rating" value = "Fair">
-            <label for = "fair">Fair</label>
-            <input type = "radio" id = "good" name = "rating" value = "Good">
-            <label for = "good">Good</label>
-            <input type = "radio" id = "veryGood" name = "rating" value = "Very_Good">
-            <label for = "veryGood">Great</label> <br>
-            <input type = "radio" id = "excellent" name = "rating" value = "Excellent">
-            <label for = "excellent">Excellent</label>
+            <input type="text" id="reviewBox" name="textReview" maxlength="14" style="padding: 10px"> 
         </div>
         <div id = "ratingTextbox" style = "position: relative; top: -25px">
             <h3>Tell us why you gave FraudBusters the rating you selected</h3>
-            <textarea id="detailedReview" rows="4" cols="30" style="resize: none">
+            <textarea id="detailedReview" name="reviewDetails" rows="4" cols="30" style="resize: none">
 
             </textarea>
         </div>
         <div id="buttonFunctionality">
-            <button id = "reviewSubmit" class="button-48" type = "submit">Submit Review</button>
+            <button id = "reviewSubmit"class="button-48" type = "submit">Submit Review</button>
+            <script src="Review.js"></script>
         </div>
     </div>
 </body>
