@@ -23,4 +23,10 @@ class ExtensionUser(models.Model):
 
     class Meta: 
         managed = True
-    
+
+class ReviewStorage(models.Model):
+    rating = models.CharField(max_length=14)
+    rating_reason = models.CharField(max_length = 40)
+
+    def __str__(self) -> str:
+        return self.rating
